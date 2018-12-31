@@ -105,8 +105,9 @@ signature_names=encode(customer1+','+customer1),timestamp,nonce,signature
 1. Client之前已经获取了资源，已有：refresh\_coder\_token,ClientB Identifier。
 2. 在步骤(1)与(2)中，Client通过transmit\_fun、transmit\_data、refresh\_coder\_token与ClientB Identifier获取redirect\_uri，并重定向的认证服务器。
 3. 步骤(A)中包括一个transmit\_state，由认证服务器生成的redirect\_uri中携带。
-4. 之后ClientB的步骤同（一）中的后续流程。
-5. 特别地，步骤(C)中不含state，包含from、transmit\_fun,transmit\_data、code、type
+4. 步骤(B)除了让用户进行授权，也会判断实际用户是否等于Client传递的用户（若不等于可以进行报错）。
+5. 之后ClientB的步骤同（一）中的后续流程。
+6. 特别地，步骤(C)中不含state，包含from、transmit\_fun,transmit\_data、code、type
 
 ### 特别说明：
 * 步骤(A)与(C)需要对参数进行签名,且包括参数名，(A)与(C)由认证服务器进行签名，具体说明见（一）的特别说明。
