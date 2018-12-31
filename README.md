@@ -72,8 +72,8 @@ signature_names=encode(customer1+','+customer1),timestamp,nonce,signature
      +----------+             |  Client  |                    |   
           ^   ----------(A)--<|          |<------(2)----      |   
           |   |               +----------+             |      |   
-         (B)  v                                        ^      v   
-     +----|-----+                                 +---------------+
+         (B)  |                                        ^      v   
+     +----|---|-+                                 +---------------+
      |         -+----(A)--- transmit state   ---->|               |
      |  User-   |                                 | Authorization |
      |  Agent  -+----(B)-- User authenticates --->|     Server    |
