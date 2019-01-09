@@ -124,3 +124,6 @@ signature_names=encode(customer1+','+customer1),timestamp,nonce,signature
 
 # 关于传递资源协议
 如，有两个独立的Web系统A和B（两个不同公司的系统，或者没有直接耦合关系的两个系统），通过A的某个菜单或链接可以跳转到B，此时需要确保在两者之间方便地、同步地传递用户信息等会话相关资源，就可选择该协议。
+
+# 公司(Company)
+[贵州溪山科技有限公司](http://www.xishankeji.com)
