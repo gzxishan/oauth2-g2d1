@@ -1,3 +1,5 @@
+[码云](https://github.com/gzxishan/oauth2-g2d1)
+
 # oauth2-g2d1
 在oauth2.0协议的基础上进行了适当的修改，同时（为了平台级服务）增加了一个由认证服务器主动向客户端服务器发起资源授权的协议（如传递资源、登陆用户等）。
 * 官方原版:[Oauth2.0](https://oauth.net/2/)
